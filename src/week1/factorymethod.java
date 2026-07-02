@@ -1,4 +1,4 @@
-//interface enemy{
+package week1;//interface enemy{
 //    void attack();
 //    void spawn();
 //}
@@ -28,7 +28,7 @@
 //
 //    }
 //}
-//public class factorymethod
+//public class week1.factorymethod
 //{
 //    public static void main(String[] args) {
 //        goblin goblin1=new goblin();
@@ -47,19 +47,19 @@
 //
 //    }
 //}
-//class basicburger extends burger{
+//class week1.basicburger extends burger{
 //    @Override
 //    void prepare(){
 //        System.out.println("i am a basic burger ");
 //    }
 //}
-//class standardburger extends burger{
+//class week1.standardburger extends burger{
 //    @Override
 //    void prepare(){
 //        System.out.println("i am a standard burger ");
 //    }
 //}
-//class premiumburger extends burger{
+//class week1.premiumburger extends burger{
 //    @Override
 //    void prepare(){
 //        System.out.println("i am a premium burger  ");
@@ -69,19 +69,19 @@
 //class burgerfactory {
 //    burger burgerchooser(String type) {
 //        if (type == "basic burger") {
-//            return new basicburger();
+//            return new week1.basicburger();
 //        }
 //        if (type == "standard burger") {
-//            return new standardburger();
+//            return new week1.standardburger();
 //        }
 //        if (type == "premium burger") {
-//            return new premiumburger();
+//            return new week1.premiumburger();
 //
 //        }
 //        return null;
 //    }
 //}
-//public class factorymethod{
+//public class week1.factorymethod{
 //    public static void main(String[] args) {
 //        burgerfactory burger1=new burgerfactory();
 //        burger burger2=burger1.burgerchooser("premium burger");

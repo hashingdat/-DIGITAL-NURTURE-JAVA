@@ -1,3 +1,5 @@
+package week1;
+
 class atm {
 
     private static atm ATM;
