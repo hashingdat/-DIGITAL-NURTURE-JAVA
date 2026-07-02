@@ -94,7 +94,7 @@
 
 
 
-abstract class burgersgit  {
+abstract class burgers  {
     void prepare(){
 
     }
