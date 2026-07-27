@@ -1,0 +1,47 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Task 2: Conditional Classes */
+.card--enrolled {
+  background-color: #f0f9ff;
+}
+
+.card--full {
+  font-weight: 500;
+}
+
+.expanded {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.status-badge {
+  margin: 10px 0;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.badge-passed { background-color: #d4edda; color: #155724; }
+.badge-failed { background-color: #f8d7da; color: #721c24; }
+.badge-pending { background-color: #e2e3e5; color: #383d41; }
+
+.details-text {
+  margin-top: 10px;
+  color: #555;
+  font-style: italic;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}

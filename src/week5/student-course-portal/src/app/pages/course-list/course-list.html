@@ -1,0 +1,22 @@
+<div class="courses-container">
+  <h1>Available Courses</h1>
+
+  @if (isLoading) {
+  <p>Loading courses...</p>
+  } @else {
+  <div class="course-list">
+    @for (course of courses; track course.id) {
+    <app-course-card
+      [course]="course"
+      (enroll)="onEnroll($event)">
+    </app-course-card>
+    } @empty {
+    <p>No courses available.</p>
+    }
+  </div>
+  }
+
+  @if (selectedCourseId) {
+  <p>Selected course ID: {{ selectedCourseId }}</p>
+  }
+</div>

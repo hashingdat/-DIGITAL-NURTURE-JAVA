@@ -1,0 +1,15 @@
+angular.json - Contains the Angular CLI workspace configuration, including project settings and configurations for building, serving, and testing the Angular application.
+
+tsconfig.json - Contains the base TypeScript compiler configuration for the Angular project.
+
+tsconfig.app.json - Contains TypeScript compiler settings specifically used to compile the Angular application.
+
+package.json - Contains project metadata, npm scripts, and the dependencies required by the Angular application.
+
+src/main.ts - The main entry point of the Angular application. It bootstraps the root Angular application using the application configuration.
+
+src/app/app.config.ts - Contains the application-level configuration and providers used by the standalone Angular application.
+
+src/app/app.ts - Defines the root component of the Angular application and contains its component configuration and logic.
+
+src/index.html - The main HTML document loaded by the browser. Angular renders the application through the root application element in this file.

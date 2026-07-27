@@ -1,0 +1,73 @@
+<div class="home-container">
+
+  <!-- Interpolation -->
+  <h1>{{ portalName }}</h1>
+
+  <h2>Welcome, {{ studentName }}!</h2>
+
+  <!-- Two-way binding -->
+  <input
+    type="text"
+    [(ngModel)]="studentName"
+    placeholder="Enter your name"
+  >
+
+  <p>
+    Manage your courses, track your enrollment, and view your academic profile all in one place.
+  </p>
+
+  <!-- Search using two-way binding -->
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search for a course"
+  >
+
+  <p>Searching for: {{ searchTerm }}</p>
+
+  <div class="stats-container">
+
+    <div class="card">
+      <h2>Courses Available</h2>
+      <p>{{ courseCount }}</p>
+    </div>
+
+    <div class="card">
+      <h2>Enrolled</h2>
+      <p>{{ enrolledCount }}</p>
+    </div>
+
+    <div class="card">
+      <h2>GPA</h2>
+      <p>{{ gpa }}</p>
+    </div>
+
+  </div>
+
+  <!-- Property binding and Event binding -->
+  <button
+    [disabled]="!isPortalActive"
+    (click)="onEnrollClick()"
+  >
+    Enroll Now
+  </button>
+
+  <!-- Display event message -->
+  @if (message) {
+  <p>{{ message }}</p>
+  }
+
+  <!-- Existing button -->
+  <button (click)="showMessage()">
+    View My Courses
+  </button>
+
+  <!--
+    [property] is one-way binding:
+    data flows from the component to the DOM.
+
+    [(ngModel)] is two-way binding:
+    data flows between the component and the DOM.
+  -->
+
+</div>
