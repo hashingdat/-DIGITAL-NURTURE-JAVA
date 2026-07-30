@@ -1,0 +1,17 @@
+<div class="details-container">
+  <div *ngIf="course; else notFound" class="card">
+    <h2>{{ course.title }}</h2>
+    <p><strong>Category:</strong> {{ course.category }}</p>
+    <p><strong>Description:</strong> {{ course.description }}</p>
+
+    <a routerLink="/courses" class="btn-back">← Back to Courses</a>
+  </div>
+
+  <ng-template #notFound>
+    <div class="card error">
+      <h3>Course Not Found</h3>
+      <p>The requested course could not be loaded.</p>
+      <a routerLink="/courses" class="btn-back">← Back to Catalog</a>
+    </div>
+  </ng-template>
+</div>

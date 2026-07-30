@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Horizontal Grid Layout */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.course-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-details {
+  display: inline-block;
+  color: #5c3080;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.btn-details:hover {
+  text-decoration: underline;
+}

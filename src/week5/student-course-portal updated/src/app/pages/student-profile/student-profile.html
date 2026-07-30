@@ -1,0 +1,35 @@
+<div class="profile-container">
+  <h2>Student Profile</h2>
+
+  <!-- Personal Information Section -->
+  <div class="profile-card">
+    <h3>Personal Information</h3>
+    <div class="info-grid">
+      <p><strong>Name:</strong> {{ studentName }}</p>
+      <p><strong>Student ID:</strong> {{ studentId }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Program:</strong> {{ program }}</p>
+      <p><strong>Current Semester:</strong> {{ semester }}</p>
+      <p><strong>GPA:</strong> {{ gpa }} / 4.0</p>
+    </div>
+  </div>
+
+  <!-- Enrolled Courses Section -->
+  <div class="profile-card mt-20">
+    <h3>Enrolled Courses</h3>
+
+    <div *ngIf="enrolledCourses.length === 0" class="no-courses">
+      <p>No courses enrolled yet.</p>
+      <p>Go to the <strong>Course List</strong> page and click "Enroll" on a course!</p>
+    </div>
+
+    <ul *ngIf="enrolledCourses.length > 0" class="course-list">
+      <li *ngFor="let course of enrolledCourses">
+        <div class="course-info">
+          <h4>{{ course.name }} ({{ course.code }})</h4>
+          <p>Credits: {{ course.credits }} | Status: <span class="status-badge">{{ course.gradeStatus }}</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

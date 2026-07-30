@@ -1,0 +1,64 @@
+.profile-container {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.info-grid p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.no-courses {
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.course-item {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.course-info h4 {
+  margin: 0 0 5px 0;
+  color: #007bff;
+}
+
+.course-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.status-badge {
+  text-transform: capitalize;
+  font-weight: bold;
+}
